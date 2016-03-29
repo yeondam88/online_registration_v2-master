@@ -1,0 +1,222 @@
+/***************************************
+GENERAL
+****************************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', sans-serif;
+}
+fieldset {
+  border: none;
+}
+
+/***************************************
+HEADER RULE
+****************************************/
+
+
+/*----Header Rule----*/
+
+.headline h1 {
+  margin: 0;
+  padding: 30px 30px;
+  background-color: #333333;
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+}
+.main-header h2, .main-header p, .main-header hr {
+  text-align: center;
+}
+.main-header h2, .main-header p {
+  margin: 20px auto;
+}
+.main-header p {
+  color: #333333;
+  width: 90%;
+  font-size: 1em;
+}
+
+/*---- Horizontal Line Rule ----*/
+
+.horizontal-line {
+  width: 90%;
+  margin: auto;
+}
+.first-line {
+  border: 3px solid black;
+}
+.second-line {
+  margin-top: 5px;
+  border: 1.5px solid black;
+}
+.third-line {
+  width: 90%;
+  margin: 30px auto;
+  border: 2px solid black;
+}
+
+/*----Contact Rule----*/
+
+.contact-info {
+  text-align: left;
+  margin: 15px auto;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+/*----form Rule----*/
+
+form > * {
+  display: block;
+}
+/*form fieldset {
+  width: 90%;  
+}*/
+
+form > label {
+  text-align: left;
+  width: 90%;
+  margin: 15px auto;
+  color: lightgray;
+}
+form input.contact {
+  padding: 15px 30px;
+  width: 90%;
+  margin: 15px auto;
+  background-color: lightgrey;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+form input#user_zipcode {
+  margin: 15px 5%;
+  padding: 15px 30px;
+  width: 70%;
+  background-color: lightgrey;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  padding-right: 3px;
+}
+input#state-address::-webkit-input-placeholder {
+  text-align: left;
+  font-style: normal;
+  padding-right: 3px;
+}
+#state {
+  display: none;
+}
+
+/*----Second section----*/
+
+.newsletter {
+  text-align: left;
+  margin: 15px auto;
+  width: 90%;
+  font-size: 1.5em;
+}
+
+/*----Second form rule----*/
+
+.newsletter-first, .newsletter-second, .textarea {
+  width: 90%;
+  margin: auto;
+  color: lightgrey;
+}
+.newsletter-first p {
+  margin-bottom: 10px;
+}
+.newsletter-first input[type="checkbox"], .newsletter-second input[type="radio"] {
+  margin: 10px auto;
+}
+
+/*----Textarea rule ----*/
+
+textarea {
+  margin: 15px auto;
+  outline: none;
+  resize: none;
+  color: black;
+  width: 100%;
+  border: none;
+  background-color: lightgrey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/*----Button Rule----*/
+
+.button {
+  width: 90%;
+  margin: auto;
+}
+button {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  width: 100%;
+  margin: 15px auto;
+  padding: 30px 30px;
+  border: none;
+  background-color: #66cccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.copyright {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: lightgray;
+}
+
+/***************************************
+MEDIAQUERIES
+****************************************/
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .headline {
+    width: 100%;
+  }
+  .wrapper {
+    margin: auto;
+    width: 60%;
+  }
+  .horizontal-line {
+    width: 100%;
+  }
+  .third-line {
+    width: 100%;
+  }
+  form label {
+    float: left;
+    width: 30%;
+  }
+  form input.contact {
+    width: 70%
+  }
+  .newsletter-first, .newsletter-second, .textarea, .button {
+    width: 100%;
+  }
+  .button button {
+    padding: 15px 30px;
+  }
+}
