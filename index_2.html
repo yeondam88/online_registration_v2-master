@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main2.css">
+  <title>Online Registration</title>
+</head>
+
+<body>
+  <header class="headline">
+    <h1>THE CODE REVIEW</h1>
+  </header>
+  <div class="wrapper">
+    <section>
+      <div class="main-header">
+
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <div class="horizontal-line">
+          <hr class="first-line" />
+          <hr class="second-line" />
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <form>
+        <fieldset>
+          <legend class="contact-info">Contact Information</legend>
+          <label for="user_name">Full Name</label>
+          <input type="text" id="user_name" class="contact" name="user_name" required placeholder="Required">
+
+          <label for="user_email">Email Address</label>
+          <input type="user_email" id="email" class="contact" name="user_email" required placeholder="Required">
+
+          <label for="user_phonenumber">Phone Number</label>
+          <input type="tel" id="user_phonenumber" class="contact" name="user_phonenumber">
+
+          <label for="user_streetaddress">Street Address</label>
+          <input type="text" id="user_street_address" class="contact" name="user_streetaddress">
+
+          <label for="user_cityaddress">City</label>
+          <input type="text" id="user_cityaddress" class="contact" name="user_cityaddress">
+
+          <label for="user_stateaddress">State</label>
+          <input list="state" id="user_stateaddress" class="contact" name="user_state" placeholder="Choose State" />
+
+          <datalist id="state">
+            <option value="AZ">
+              <option value="CA">
+          </datalist>
+          <label for="user_zipcode">Zip Code</label>
+          <input type="text" id="user_zipcode" class="contact" name="user_zipcode">
+        </fieldset>
+      </form>
+    </section>
+
+    <hr class="third-line" />
+
+    <section>
+    
+      <form>
+        <fieldset class="newsletter-first">
+          <legend class="newsletter">Newsletter</legend>
+          <h2>Select the newsletters you would like to receive</h2>
+          <input type="checkbox" checked="checked" name="html-news" value="HTML News">
+          <p>HTML News</p>
+          <br/>
+          <input type="checkbox" name="css-news" value="CSS News">
+          <p>CSS News</p>
+          <br/>
+          <input type="checkbox" name="javascript-news" value="Javascript News">
+          <p>Javascript News</p>
+          <br/>
+        
+        <div class="newsletter-second">
+          <h2>Newsletter format</h2>
+          <input type="radio" checked="checked" name="html" value="HTML">
+          <p>HTML</p>
+          <br/>
+          <input type="radio" name="plain-text" value="Plain text">
+          <p>Plain text</p>
+          <br/>
+        </div>
+        <h2>Other topic you'd like to hear about</h2>
+        <div class="textarea">
+          <textarea name="textarea" rows="10" cols="150"></textarea>
+        </div>
+        </fieldset>
+      </form>
+
+
+
+      <div class="button">
+        <button type="submit">Sign Up</button>
+      </div>
+      <p class="copyright">
+        Copyright The Code Review
+      </p>
+    </section>
+  </div>
+</body>
+
+</html>
