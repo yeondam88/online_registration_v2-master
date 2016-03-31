@@ -52,7 +52,7 @@ HEADER RULE
 
 .horizontal-line {
   width: 95%;
-  margin: auto;
+  margin-bottom: 25px;
 }
 .first-line {
   border: 3px solid black;
@@ -150,6 +150,7 @@ input#state-address::-webkit-input-placeholder {
 .newsletter-first h2 {
   font-size: 1.125em;
   margin-bottom: 10px;
+  color: #131313;
 }
 .newsletter-first input[type="checkbox"], .newsletter-second input[type="radio"] {
   margin: 10px auto;
@@ -159,10 +160,11 @@ input#state-address::-webkit-input-placeholder {
   display: inline;
   margin-left: 10px;
   font-size: 1em;
+  color: #131313;
 }
 
 .newsletter-second h2 {
-  color: #333333;
+  color: #131313;
   margin-top: 10px;
 }
 
