@@ -127,6 +127,12 @@ input#state-address::-webkit-input-placeholder {
   display: none;
 }
 
+fieldset input:focus {
+  outline-style: inset;
+  outline-width: thin;
+  outline-color: #rgb(107, 255, 162);
+}
+
 /*----Second section----*/
 
 .newsletter {
