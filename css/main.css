@@ -16,6 +16,11 @@ fieldset {
   border: none;
 }
 
+input, textarea, keygen, select, button {
+    display: block;
+}
+
+
 /***************************************
 HEADER RULE
 ****************************************/
@@ -46,8 +51,8 @@ HEADER RULE
 /*---- Horizontal Line Rule ----*/
 
 .horizontal-line {
-  width: 90%;
-  margin: auto;
+  width: 95%;
+  margin-bottom: 25px;
 }
 .first-line {
   border: 3px solid black;
@@ -57,7 +62,7 @@ HEADER RULE
   border: 1.5px solid black;
 }
 .third-line {
-  width: 90%;
+  width: 95%;
   margin: 30px auto;
   border: 2px solid black;
 }
@@ -88,7 +93,7 @@ form > label {
 }
 form input.contact {
   padding: 15px 30px;
-  width: 90%;
+  width: 100%;
   margin: 15px auto;
   background-color: lightgrey;
   border: none;
@@ -98,15 +103,15 @@ form input.contact {
   border-bottom-right-radius: 5px;
 }
 form input#user_zipcode {
-  margin: 15px 5%;
   padding: 15px 30px;
-  width: 70%;
+  width: 60%;
   background-color: lightgrey;
   border: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin: 15px 0;
 }
 ::-webkit-input-placeholder {
   text-align: right;
@@ -127,22 +132,40 @@ input#state-address::-webkit-input-placeholder {
 .newsletter {
   text-align: left;
   margin: 15px auto;
-  width: 90%;
+  width: 100%;
   font-size: 1.5em;
+  color: #333333;
 }
 
 /*----Second form rule----*/
 
-.newsletter-first, .newsletter-second, .textarea {
-  width: 90%;
-  margin: auto;
+.newsletter-first {
+  width: 100%;
+}
+
+.newsletter-second, .textarea {
+  /*width: 95%;*/
   color: lightgrey;
 }
-.newsletter-first p {
+.newsletter-first h2 {
+  font-size: 1.125em;
   margin-bottom: 10px;
+  color: #131313;
 }
 .newsletter-first input[type="checkbox"], .newsletter-second input[type="radio"] {
   margin: 10px auto;
+  display: inline;
+}
+.newsletter-first p {
+  display: inline;
+  margin-left: 10px;
+  font-size: 1em;
+  color: #131313;
+}
+
+.newsletter-second h2 {
+  color: #131313;
+  margin-top: 10px;
 }
 
 /*----Textarea rule ----*/
@@ -152,7 +175,7 @@ textarea {
   outline: none;
   resize: none;
   color: black;
-  width: 100%;
+  width: 98%;
   border: none;
   background-color: lightgrey;
   border-top-left-radius: 5px;
@@ -164,14 +187,14 @@ textarea {
 /*----Button Rule----*/
 
 .button {
-  width: 90%;
-  margin: auto;
+  /*width: 95%;
+  margin: auto;*/
 }
 button {
   text-align: center;
   font-size: 1.5em;
   color: white;
-  width: 100%;
+  width: 95%;
   margin: 15px auto;
   padding: 30px 30px;
   border: none;
@@ -192,7 +215,7 @@ button {
 MEDIAQUERIES
 ****************************************/
 
-@media (min-width: 768px) and (min-width: 1024px) {
+@media (min-width: 768px) {
   .headline {
     width: 100%;
   }
@@ -209,9 +232,51 @@ MEDIAQUERIES
   fieldset label {
     float: left;
     width: 30%;
+    display: inline;
+    margin-top: 30px;
   }
   form input.contact {
-    /*width: 70%*/
+    display: inline;
+    width: 70%;
+  }
+  fieldset:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .newsletter-first, .newsletter-second, .textarea, .button {
+    width: 100%;
+  }
+  .button button {
+    padding: 15px 30px;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .headline {
+    width: 100%;
+  }
+  .wrapper {
+    margin: auto;
+    width: 60%;
+  }
+  .horizontal-line {
+    width: 100%;
+  }
+  .third-line {
+    width: 100%;
+  }
+  fieldset label {
+    float: left;
+    width: 30%;
+    display: inline;
+    margin-top: 30px;
+  }
+  form input.contact {
+    display: inline;
+    width:70%;
   }
   fieldset:after {
     content: "";
