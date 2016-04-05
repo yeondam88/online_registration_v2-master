@@ -52,6 +52,7 @@ HEADER RULE
 
 .horizontal-line {
   width: 95%;
+  margin-left: 10px;
   margin-bottom: 25px;
 }
 .first-line {
@@ -91,7 +92,8 @@ form > label {
   margin: 15px auto;
   color: lightgray;
 }
-form input.contact {
+form input.contact,
+form select.contact {
   padding: 15px 30px;
   width: 100%;
   margin: 15px auto;
@@ -101,6 +103,12 @@ form input.contact {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+form select#user_stateaddress {
+  height: 50px;
+}
+form select option {
+  color: #333;
 }
 form input#user_zipcode {
   padding: 15px 30px;
@@ -118,16 +126,14 @@ form input#user_zipcode {
   font-style: italic;
   padding-right: 3px;
 }
-input#state-address::-webkit-input-placeholder {
+select#state-address::-webkit-input-placeholder {
   text-align: left;
   font-style: normal;
   padding-right: 3px;
 }
-#state {
-  display: none;
-}
 
-fieldset input:focus {
+fieldset input:focus,
+fieldset select:focus {
   outline-style: inset;
   outline-width: thin;
   outline-color: #rgb(107, 255, 162);
@@ -153,6 +159,11 @@ fieldset input:focus {
   /*width: 95%;*/
   color: lightgrey;
 }
+.newsletter-first label {
+  width: 100%;
+  display: inline;
+  margin-top: 0;
+}
 .newsletter-first h2 {
   font-size: 1.125em;
   margin-bottom: 10px;
@@ -162,9 +173,8 @@ fieldset input:focus {
   margin: 10px auto;
   display: inline;
 }
-.newsletter-first p {
+.newsletter-first label {
   display: inline;
-  margin-left: 10px;
   font-size: 1em;
   color: #131313;
 }
@@ -201,7 +211,7 @@ button {
   font-size: 1.5em;
   color: white;
   width: 95%;
-  margin: 15px auto;
+  margin: auto;
   padding: 30px 30px;
   border: none;
   background-color: #66cccc;
@@ -209,6 +219,11 @@ button {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+button:hover,
+button:active {
+  opacity: 0.7;
 }
 .copyright {
   margin-top: 20px;
@@ -241,7 +256,8 @@ MEDIAQUERIES
     display: inline;
     margin-top: 30px;
   }
-  form input.contact {
+  form input.contact,
+  form select.contact {
     display: inline;
     width: 70%;
   }
@@ -280,7 +296,8 @@ MEDIAQUERIES
     display: inline;
     margin-top: 30px;
   }
-  form input.contact {
+  form input.contact,
+  form select.contact {
     display: inline;
     width:70%;
   }
