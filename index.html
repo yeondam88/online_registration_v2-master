@@ -35,7 +35,7 @@
           <input type="text" id="user_name" class="contact" name="user_name" required placeholder="Required">
 
           <label for="email">Email Address</label>
-          <input type="user_email" id="email" class="contact" name="user_email" required placeholder="Required">
+          <input type="email" id="email" class="contact" name="user_email" required placeholder="Required">
 
           <label for="user_phonenumber">Phone Number</label>
           <input type="tel" id="user_phonenumber" class="contact" name="user_phonenumber">
@@ -47,7 +47,7 @@
           <input type="text" id="user_cityaddress" class="contact" name="user_cityaddress">
 
           <label for="user_stateaddress">State</label>
-          <select id="user_stateaddress" class="contact" name="user_state" placeholder="Choose State" />
+          <select id="user_stateaddress" class="contact" name="user_state">
           <option value="" disabled selected>Choose State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
@@ -112,13 +112,13 @@
           <h2>Select the newsletters you would like to receive</h2>
 
           <label for="html-news">
-            <input type="checkbox" id="html-news" checked="checked" name="html-news" value="HTML News"> HTML News</label>
+            <input type="checkbox" id="html-news" checked="checked" name="newsletter-select" value="HTML News"> HTML News</label>
           <br/>
           <label for="css-news">
-            <input type="checkbox" id="css-news" name="css-news" value="CSS News"> CSS News</label>
+            <input type="checkbox" id="css-news" name="newsletter-select" value="CSS News"> CSS News</label>
           <br/>
           <label for="javascript-news">
-            <input type="checkbox" id="javascript-news" name="javascript-news" value="Javascript News"> Javascript News</label>
+            <input type="checkbox" id="javascript-news" name="newsletter-select" value="Javascript News"> Javascript News</label>
           <br/>
           <div class="newsletter-second">
             <h2>Newsletter format</h2>
@@ -131,7 +131,7 @@
           </div>
           <h2>Other topic you'd like to hear about</h2>
           <div class="textarea">
-            <textarea name="textarea" rows="10" cols="150"></textarea>
+            <label for="textarea-field"><textarea id="textarea-field" name="textarea" rows="10" cols="150"></textarea></label>
           </div>
         </fieldset>
 

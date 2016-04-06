@@ -133,10 +133,11 @@ select#state-address::-webkit-input-placeholder {
 }
 
 fieldset input:focus,
-fieldset select:focus {
+fieldset select:focus,
+fieldset textarea:focus {
   outline-style: inset;
   outline-width: thin;
-  outline-color: #rgb(107, 255, 162);
+  outline-color: rgb(107, 255, 162);
 }
 
 /*----Second section----*/
